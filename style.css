@@ -1,0 +1,259 @@
+
+body{
+margin:0;
+padding:0;
+
+}
+.navbar {
+  /* padding: 0px 15px; */
+  margin-top:25px;
+  
+  width: 100%;
+  box-sizing: border-box;
+  display:flex;
+  
+  align-items: center;
+  
+  @media screen and (max-width:1200px) {
+    margin-top:0;
+    box-shadow: 0 2px 4px -2px rgba(0,0,0,0.5);
+    justify-content: center;
+  }
+}
+.navbar > .mobilenav {
+    padding:5px 30px;
+  width:100%;
+  display: flex;
+  align-items: center;
+  
+  justify-content: space-between;
+
+  @media screen and (min-width:1200px) {
+    display: none;
+    
+  }
+}
+.mobilenav > img:nth-child(2) {
+  width: 28%;
+  height:80%;
+  @media screen and (min-width:500px) {
+    width:20%
+  }
+
+}
+.mobilenav > img:nth-child(1) {
+  width: 5vw;
+  height:10vh;
+  @media screen and (min-width:500px) {
+    width:8vw;
+    height:13vh;
+  }
+}
+.mobilenav > img:nth-child(3) {
+  width: 4vw;
+  height:8vh;
+  @media screen and (min-width:500px) {
+    width:7vw;
+    height:10vh;
+  }
+}
+.bigScreenNav{
+    display:flex;
+    justify-content: space-around;
+    margin-left:25px;
+    width:100%;
+    box-sizing: border-box;
+    align-items: center;
+    padding:0 40px;
+    @media screen and (max-width:1200px) {
+        display: none;
+      }
+}
+.bigScreenNav>img:first-child{
+    width:15%;
+    cursor: pointer;
+}
+.searchandbutton{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+
+    align-items: center;
+    gap:20px;
+}
+.searchbox{
+    position: relative;
+    width: 55%;
+}
+.searchbox>img{
+    position:absolute;
+    margin-left: 20px;
+    top:12px;
+    cursor: pointer;
+    
+}
+.searchbox>input{
+padding:15px 50px;
+width:100%;
+height:100%;
+border-radius: 5px;
+border:1.8px solid rgba(0,0,0,0.5);
+background-color: inherit;
+cursor: pointer;
+}
+input:focus{
+    outline:none;
+}
+input::placeholder{
+  color:rgb(6, 51, 134);
+  font-size:16px;
+  font-weight:500;
+  
+}
+.logging{
+    width:20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+.logging>div{
+font-size:18px;
+font-weight: 500;
+color:rgb(4, 41, 109);
+cursor: pointer;
+}
+.logging>button{
+    border:none;
+    background-color:rgb(4, 41, 109);
+    padding:10px 30px;
+    color:white;
+    border-radius:8px;
+    font-size:18px;
+font-weight: 400;
+cursor: pointer;
+}
+.infoBar{
+    margin: 15px 0;
+    width:100%;
+    padding:0 36px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    @media screen and (max-width:1200px) {
+        display:none;
+    }
+}
+.courses{
+    display:flex;
+    align-items: center;
+    
+    gap:10px;
+}
+.infoBar> p{
+font-size: 19px;
+font-weight: 500;
+color:rgb(4, 41, 109);
+cursor:pointer;
+}
+.courses> p{
+font-size: 19px;
+font-weight: 500;
+color:rgb(4, 41, 109);
+cursor:pointer
+}
+.courses>img{
+margin-top:8px;    
+width:13px;
+height:13px;
+}
+.carousel{
+    height:500px;
+    width:100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-image: url('./assets/caraousel.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    @media screen and (max-width:768px) {
+        background-position: 75% 100%;
+    }
+   
+    
+}
+.carousel img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    @media screen and (max-width:768px) {
+        object-position: right;
+    object-fit:cover;
+    object-position: right;
+    }
+}
+.carouselNumber{
+    display: flex;
+    gap:15px;
+    position: absolute;
+    bottom:20px;
+    right:48%;
+}
+.carouselNumber span:nth-child(1){
+   
+    background: rgb(129, 128, 128);
+}
+.carouselNumber span{
+    display: inline-block;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background: rgb(219, 217, 217);
+}
+.body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:100%;
+    width:100%
+
+}
+.body h2{
+font-size:50px;
+font-weight: 800;
+}
+.body> span{
+    display: inline-block;
+margin-top:-40px;
+width:150px;
+height:3px;
+margin-bottom: 10px;
+/* fill: orange; */
+background-color: orange;
+
+}
+.needhelp{
+    width:150px;
+    height:100px;
+    overflow: hidden;
+    position: fixed;
+    bottom:30px;
+    right:30px;
+}
+.needhelp img{
+    width:100%;
+    height:100%;
+    
+}
+
+.body .bodyimages{
+    margin-top: 50px;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+
+}
